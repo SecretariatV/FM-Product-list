@@ -1,13 +1,13 @@
-import { Cart } from "@components/cart";
+import Cart from "@components/cart";
 import S from "./index.module.scss";
-import { Desserts } from "@components/desserts";
+import Desserts from "@components/desserts";
 
 const MainPage = () => {
   return (
     <div className={S.body}>
       <div className={S.wrapper}>
         <Desserts />
-        <div>
+        <div className={S.cart}>
           <Cart />
         </div>
       </div>

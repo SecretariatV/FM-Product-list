@@ -48,6 +48,10 @@ h1 {
     color: var(--rose-400);
 }
 
+.very-light-rose {
+    color: var(--rose-100);
+}
+
 .sm {
     font-size: 10px;
     line-height: 100%;
@@ -55,6 +59,21 @@ h1 {
 
 .md {
     font-size: 12px;
+    line-height: 100%;
+}
+
+.base {
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.lg {
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.xl {
+    font-size: 32px;
     line-height: 100%;
 }
 

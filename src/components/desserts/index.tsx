@@ -1,8 +1,8 @@
 import { DESSERT_LIST } from "@utils/dataUtils";
 import S from "./index.module.scss";
-import { DessertItem } from "./item";
+import DessertItem from "./item";
 
-export const Desserts = () => {
+const Desserts = () => {
   return (
     <div className={S.body}>
       <h1 className="dark-rose bold">Desserts</h1>
@@ -14,3 +14,5 @@ export const Desserts = () => {
     </div>
   );
 };
+
+export default Desserts;

@@ -12,4 +12,15 @@ interface IImageInfo {
   desktop: string;
 }
 
-export type { IDessertType, IImageInfo };
+type CategoryType = {
+  [key: string]: DessertType;
+};
+
+type DessertType = {
+  count: number;
+  name: string;
+  price: number;
+  img: string;
+};
+
+export type { IDessertType, IImageInfo, DessertType, CategoryType };

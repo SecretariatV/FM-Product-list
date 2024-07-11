@@ -24,9 +24,13 @@
         width: 327px;
         height: 210px;
       }
+
+      &.active {
+        border: 2px solid var(--red);
+      }
     }
 
-    button {
+    & > button {
       position: absolute;
       width: 160px;
       height: 42px;
@@ -49,6 +53,22 @@
 
       &:hover {
         color: var(--red);
+      }
+
+      &.active {
+        background-color: var(--red);
+        justify-content: space-between;
+        padding: 12px;
+        color: var(--white);
+
+        .roundBtn {
+          border-radius: 100%;
+          border: 1px solid var(--white);
+          display: grid;
+          place-items: center;
+          width: 18px;
+          aspect-ratio: 1/1;
+        }
       }
 
       span {

@@ -1,0 +1,38 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  border-bottom: 1px solid var(--rose-100);
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    width: 48px;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-areas: "title title" "count price";
+    gap: 8px;
+    grid-template-columns: 20px 1fr;
+
+    h4 {
+      grid-area: title;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    p {
+      grid-area: count;
+    }
+
+    span {
+      grid-area: price;
+    }
+  }
+}
