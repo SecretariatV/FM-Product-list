@@ -69,6 +69,9 @@ const DessertItem: FC<IProps> = ({ data }) => {
   const handleDecCart = (name: string) => {
     const tempdata = state.context.desserts;
     tempdata[name].count -= 1;
+    if (tempdata[name].count === 0) {
+      delete tempdata[name];
+    }
     send({ type: "SET_DESIERTS", value: tempdata });
   };
 
@@ -97,7 +100,10 @@ const DessertItem: FC<IProps> = ({ data }) => {
               >
                 <img src={dec} alt="Dec image" />
               </div>
-              <span>{state.context.desserts[data.name].count}</span>
+              <span>
+                {state.context.desserts[data.name] &&
+                  state.context.desserts[data.name].count}
+              </span>
               <div
                 className={S.roundBtn}
                 onClick={() => handleAddCart(data.name)}
