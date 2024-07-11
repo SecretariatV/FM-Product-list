@@ -1,15 +1,15 @@
-interface DessertType {
-  image: ImageInfo;
+interface IDessertType {
+  image: IImageInfo;
   name: string;
   category: string;
   price: number;
 }
 
-interface ImageInfo {
+interface IImageInfo {
   thumbnail: string;
   mobile: string;
   tablet: string;
   desktop: string;
 }
 
-export type { DessertType };
+export type { IDessertType, IImageInfo };

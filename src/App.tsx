@@ -1,11 +1,11 @@
-import { Card } from "@components/card";
 import GlobalStyles from "@styles/globalStyles";
+import MainPage from "@pages/main";
 
 const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Card />
+      <MainPage />
     </>
   );
 };

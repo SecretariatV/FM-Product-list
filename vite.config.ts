@@ -12,6 +12,7 @@ export default defineConfig(() => {
       alias: {
         "@assets": "/src/assets",
         "@components": "/src/components",
+        "@pages": "/src/pages",
         "@styles": "/src/styles",
         "@utils": "/src/utils",
       },

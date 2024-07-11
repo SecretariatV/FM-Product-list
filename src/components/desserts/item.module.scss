@@ -1,0 +1,67 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  height: 350px;
+  width: 250px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-self: center;
+
+  @include G.breakpoint("sm") {
+    width: 327px;
+    height: 320px;
+  }
+
+  .img {
+    position: relative;
+
+    & > img {
+      width: 250px;
+      height: 240px;
+      border-radius: 6px;
+
+      @include G.breakpoint("sm") {
+        width: 327px;
+        height: 210px;
+      }
+    }
+
+    button {
+      position: absolute;
+      width: 160px;
+      height: 42px;
+      background-color: var(--white);
+      border-radius: 42px;
+      border: 1px solid var(--red);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      outline: none;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--rose-900);
+
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        color: var(--red);
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .infos {
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

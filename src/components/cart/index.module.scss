@@ -1,0 +1,34 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  width: 385px;
+  min-height: 300px;
+  border-radius: 6px;
+  padding: 32px 24px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include G.breakpoint("lg") {
+    width: 300px;
+  }
+
+  @include G.breakpoint("sm") {
+    width: 327px;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: var(--red);
+  }
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 100%;
+  }
+}

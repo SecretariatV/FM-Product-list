@@ -2,61 +2,68 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-    --lime: hsl(61, 70%, 52%);
-    --red: hsl(4, 69%, 50%);
     --white: hsl(0, 0%, 100%);
-    --slate-100: hsl(202, 86%, 94%);
-    --slate-300: hsl(203, 41%, 72%);
-    --slate-500: hsl(200, 26%, 54%);
-    --slate-700: hsl(200, 24%, 40%);
-    --slate-900: hsl(202, 55%, 16%);
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Plus Jakarta Sans";
+    font-family: "Red Hat Text", sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100%;
-    background-color: var(--slate-100);
-    display: grid;
-    place-items: center;
-}
-
-#root {
-    display: grid;
-    place-items: center;
+    background-color: var(--rose-50);
 }
 
 h1 {
-    color: var(--slate-900);
-    font-size: 24px;
-    line-height: 36px;
-    user-select: none;
+    font-size: 28px;
+    line-height: 100%;
 }
 
-h2 {
-    color: var(--white);
+.red {
+    color: var(--red);
 }
 
-p {
-    font-size: 16px;
-    color: var(--slate-300);
-    text-align: center;
+.dark-rose {
+    color: var(--rose-900);
 }
 
-.underline {
-    text-decoration: underline;
+.medium-rose {
+    color: var(--rose-500);
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--slate-700);
+.light-rose {
+    color: var(--rose-400);
+}
+
+.sm {
+    font-size: 10px;
+    line-height: 100%;
+}
+
+.md {
+    font-size: 12px;
+    line-height: 100%;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
 }
 `;
 

@@ -1,0 +1,18 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  width: 100%;
+
+  .wrapper {
+    @include G.mainLayout;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+
+    @include G.breakpoint("sm") {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+    }
+  }
+}
